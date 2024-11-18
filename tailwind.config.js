@@ -5,6 +5,13 @@ module.exports = {
 			fontFamily: {
 				gilroy: ["Gilroy", "sans-serif"],
 				silk: ["Silk Serif", "serif"],
+				roboto: ["Roboto", "sans-serif"],
+			},
+			colors: {
+				productblue: "#274156",
+				productblack: "#1D1C1F",
+				greybg: "#E3E3E3",
+
 			},
 		},
 	},
