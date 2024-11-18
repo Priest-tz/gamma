@@ -58,7 +58,7 @@ const Imageslider = () => {
 						className={`w-3 h-3 rounded-full transform transition-transform duration-300 ${
 							currentImage === index
 								? "scale-125 bg-white"
-								: "scale-100 bg-white opacity-80"
+								: "scale-80 bg-white opacity-80"
 						}`}></button>
 				))}
 			</div>
