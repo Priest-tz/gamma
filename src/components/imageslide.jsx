@@ -14,7 +14,7 @@ const Imageslider = () => {
 	];
 
 	const labels = ["One", "Two", "Three"];
-	const [currentImage, setCurrentImage] = useState(0);
+	const [currentImage, setCurrentImage] = useState(2); 
 	const [isMobile, setIsMobile] = useState(false);
 
 	// Detect mobile view
@@ -34,6 +34,7 @@ const Imageslider = () => {
 	// Set images based on viewport size
 	const images = isMobile ? imagesMobile : imagesDesktop;
 
+	// Change image manually
 	const changeImage = (index) => {
 		setCurrentImage(index);
 	};
@@ -45,11 +46,11 @@ const Imageslider = () => {
 				<img
 					src={images[currentImage]}
 					alt={`Slide ${labels[currentImage]}`}
-					className="w-full object-cover sm:max-h-screen h-full max-h-screen"
+					className="w-full h-full object-cover object-center"
 				/>
 			</div>
 
-			{/* Mobile Navigation*/}
+			{/* Mobile Navigation */}
 			<div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3 sm:hidden">
 				{images.map((_, index) => (
 					<button
@@ -58,12 +59,12 @@ const Imageslider = () => {
 						className={`w-3 h-3 rounded-full transform transition-transform duration-300 ${
 							currentImage === index
 								? "scale-125 bg-white"
-								: "scale-80 bg-white opacity-80"
+								: "scale-60 bg-white opacity-80"
 						}`}></button>
 				))}
 			</div>
 
-			{/* Desktop Navigation*/}
+			{/* Desktop Navigation */}
 			<div className="hidden sm:flex sm:absolute sm:top-1/2 sm:right-5 sm:transform sm:-translate-y-1/2 sm:flex-col sm:space-y-4">
 				{images.map((_, index) => (
 					<button
