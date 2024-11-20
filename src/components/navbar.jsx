@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ShoppingCart, Search, Menu, X } from "lucide-react";
 
-const Navbar = () => {
+const navbar = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	const toggleMobileMenu = () => {
@@ -78,4 +78,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default navbar;
