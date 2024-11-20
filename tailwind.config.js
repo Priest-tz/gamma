@@ -11,11 +11,13 @@ module.exports = {
 				productblue: "#274156",
 				productblack: "#1D1C1F",
 				greybg: "#E3E3E3",
+				ratingyellow: "#F2C94C",
+			},
+			ontainer: {
+				center: true,
+				padding: "0",
 			},
 		},
 	},
 	plugins: [],
 };
-
-
-

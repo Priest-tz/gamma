@@ -4,7 +4,7 @@ const maincategories = () => {
 	return (
 		<div className="px-12 py-8">
 			<div className="flex justify-start my-12">
-				<span className="text-3xl font-bold font-silk text-productblue">
+				<span className="md:text-5xl text-3xl font-bold font-silk text-productblue">
 					Main Categories
 				</span>
 			</div>

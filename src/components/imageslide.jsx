@@ -14,7 +14,7 @@ const Imageslider = () => {
 	];
 
 	const labels = ["One", "Two", "Three"];
-	const [currentImage, setCurrentImage] = useState(2); 
+	const [currentImage, setCurrentImage] = useState(2);
 	const [isMobile, setIsMobile] = useState(false);
 
 	// Detect mobile view
