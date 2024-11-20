@@ -4,7 +4,7 @@ const bestseller = () => {
 	return (
 		<div className="py-8">
 			<div className="flex justify-start my-12">
-				<span className=" px-12 md:text-5xl  text-3xl font-bold font-silk text-productblue">
+				<span className="px-4 md:px-12 md:text-5xl  text-3xl font-bold font-silk text-productblue">
 					Best Selling
 				</span>
 			</div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const maincategories = () => {
 	return (
-		<div className="px-12 py-8">
+		<div className="px-4 md:px-12 py-8">
 			<div className="flex justify-start my-12">
 				<span className="md:text-5xl text-3xl font-bold font-silk text-productblue">
 					Main Categories
