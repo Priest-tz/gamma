@@ -1,9 +1,17 @@
 import React from "react";
+import { MoveUp } from "lucide-react";
 
-const socialmedia = () => {
+const Socialmedia = () => {
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
+
 	return (
-		<div className="flex flex-col py-10 w-full px-12 bg-productbg">
-			<div className="flex justify-start py-12">
+		<div className="flex flex-col py-8 w-full md:px-12 bg-productbg">
+			<div className="flex justify-start px-4 py-8 md:py-12">
 				<span className=" md:text-5xl  text-3xl font-bold font-silk text-productblue">
 					Social Media
 				</span>
@@ -115,8 +123,16 @@ const socialmedia = () => {
 					</div>
 				</div>
 			</div>
+			<div className="hidden md:flex justify-end py-10">
+				{/* Scroll to Top Button */}
+				<div
+					className="flex items-center justify-center p-5 text-white bg-productblue rounded-full cursor-pointer"
+					onClick={scrollToTop}>
+					<MoveUp className="h-8 w-8" />
+				</div>
+			</div>
 		</div>
 	);
 };
 
-export default socialmedia;
+export default Socialmedia;

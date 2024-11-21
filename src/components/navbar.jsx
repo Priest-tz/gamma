@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ShoppingCart, Search, Menu, X } from "lucide-react";
 
-const navbar = () => {
+const Navbar = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	const toggleMobileMenu = () => {
@@ -48,28 +48,28 @@ const navbar = () => {
 			)}
 
 			{/* Desktop Navbar */}
-			<div className="hidden md:flex items-center justify-between px-8 py-6 mx-28">
-				<ul className="flex space-x-8 text-productblack font-medium text-gilroy text-lg">
+			<div className="hidden md:flex items-center justify-between px-6 py-4 lg:px-12">
+				<ul className="flex flex-wrap space-x-6 text-productblack font-medium text-gilroy text-base lg:space-x-8 lg:text-lg">
 					<li className="cursor-pointer">Jacket</li>
 					<li className="cursor-pointer">Tops</li>
 					<li className="cursor-pointer">Skirts</li>
 					<li className="cursor-pointer">Pants</li>
 					<li className="cursor-pointer">Accessories</li>
 				</ul>
-				<div className="text-4xl font-roboto font-medium text-productblack">
+				<div className="text-3xl font-roboto font-medium text-productblack lg:text-4xl">
 					GAMMA
 				</div>
-				<div className="flex items-center space-x-4">
-					<div className="flex items-center border border-gray-300 rounded-3xl px-4 py-2 bg-greybg w-60 mx-4">
+				<div className="flex items-center space-x-3 lg:space-x-4">
+					<div className="flex items-center border border-gray-300 rounded-3xl px-3 py-2 bg-greybg w-48 sm:w-56 lg:w-60">
 						<input
 							type="text"
 							placeholder="Search"
-							className="outline-none px-4 text-base text-gray-700 bg-greybg w-full"
+							className="outline-none px-2 sm:px-4 text-sm text-gray-700 bg-greybg w-full"
 						/>
 						<Search className="text-gray-500 text-xs" />
 					</div>
 					<ShoppingCart className="text-xl text-productblue" />
-					<button className="text-base text-white bg-productblue px-6 py-2 rounded-3xl">
+					<button className="text-sm sm:text-base text-white bg-productblue px-4 sm:px-6 py-2 rounded-3xl">
 						Sign In
 					</button>
 				</div>
@@ -78,4 +78,4 @@ const navbar = () => {
 	);
 };
 
-export default navbar;
+export default Navbar;
