@@ -31,7 +31,7 @@ const review = () => {
 		<div className="flex flex-col md:flex-row  py-10 w-full">
 			<div className="flex justify-start md:items-start my-12 md:my-0">
 				<span className=" px-4 md:px-12 md:text-5xl  text-3xl font-bold font-silk text-productblue">
-					Review
+					Reviews
 				</span>
 			</div>
 

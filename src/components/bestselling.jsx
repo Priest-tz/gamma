@@ -18,7 +18,7 @@ const bestseller = () => {
 							className="w-full object-cover"
 						/>
 						<div className="absolute inset-0 flex justify-center items-center pb-4 bg-black bg-opacity-10 text-white font-light text-xl">
-							<button className="bg-black rounded-3xl bg-opacity-60 px-10 py-3 font-extralight text-lg">
+							<button className="bg-black rounded-3xl bg-opacity-50 px-10 py-3 font-extralight text-lg">
 								View More
 							</button>
 						</div>
@@ -50,7 +50,7 @@ const bestseller = () => {
 							className="w-full h-full object-cover"
 						/>
 						<div className="absolute inset-0 flex justify-center items-center pb-4 bg-black bg-opacity-10 text-white font-light text-xl">
-							<button className="bg-black rounded-3xl bg-opacity-60 px-14 py-4 font-extralight text-lg">
+							<button className="bg-black rounded-3xl bg-opacity-40 px-14 py-4 font-extralight text-lg">
 								View More
 							</button>
 						</div>
